@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.img-logo{
+    box-align:left;width: 120px;height: 90px;
+}
+header{
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: green;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    ;
+}
+.main-ubicacion{
+    text-align: center;
+    color: aliceblue;
+}
+.ul-instituciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 20%;
+    margin: 4%;
+    font-size: large;
+}
+.p-telefono{
+    text-align: center;
+}
+.logo-facebook{
+    width: 5%;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+.logo-instagram{
+    width: 5%;
+}
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "header header header" 
+    "institutos tienda tienda"
+    "institutos tienda tienda"
+    "footer footer footer";
+    grid-template-columns: 30% 35% 35%;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+.institutos{
+    grid-area: institutos;
+}
+.tienda{
+    grid-area: tienda;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+
+@media screen and (max-width: 500px) {
+    .ul-instituciones{
+        font-size: medium;
+        width: 18%;
+    }
+    
+}
+
