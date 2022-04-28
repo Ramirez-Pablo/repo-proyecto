@@ -13,7 +13,7 @@ header{
 body{
     background-color: green;
 }
-nav{
+.nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,12 +26,14 @@ nav{
 }
 @keyframes un_efecto{
     0%{width: 0%;}
+    25%{width: 10%;}
     50%{width: 20%;}
+    75%{width: 30%;}
     100%{width: 40%;}
 }
 
 
-.ul-instituciones{
+.list-group{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,7 +43,7 @@ nav{
     font-size: large;
     animation-name: un_efecto;
     animation-iteration-count: initial;
-    animation-timing-function: ease-in;
+    animation-timing-function:ease-in;
     animation-duration: 2s;
 }
 .p-telefono{
@@ -59,8 +61,8 @@ nav{
     display: grid;
     grid-template-areas:
     "header header header" 
-    "institutos tienda tienda"
-    "institutos tienda tienda"
+    "list-group tienda tienda"
+    "list-group tienda tienda"
     "footer footer footer";
     grid-template-columns: 30% 35% 35%;
     grid-row-gap: 5px;
