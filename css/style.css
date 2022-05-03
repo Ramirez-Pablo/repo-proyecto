@@ -32,7 +32,6 @@ body{
     100%{width: 40%;}
 }
 
-
 .list-group{
     display: flex;
     flex-direction: column;
@@ -52,11 +51,11 @@ body{
 .logo-facebook{
     width: 5%;
     margin-left: 45%;
-    margin-top: 20%;
 }
 .logo-instagram{
     width: 5%;
 }
+
 .grilla{
     display: grid;
     grid-template-areas:
