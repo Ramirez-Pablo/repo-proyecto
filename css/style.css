@@ -39,11 +39,14 @@ body{
     background-color: aliceblue;
     width: 40%;
     margin: 4%;
-    font-size: large;
+    font-size: medium;
     animation-name: un_efecto;
     animation-iteration-count: initial;
     animation-timing-function:ease-in;
     animation-duration: 2s;
+}
+.p-instituciones{
+    font-size: larger;
 }
 .p-telefono{
     text-align: center;
@@ -83,11 +86,18 @@ footer{
     display: grid;
 }
 
-@media screen and (max-width: 500px) {
-    .ul-instituciones{
-        font-size: medium;
-        width: 18%;
+@media screen and (max-width: 650px) {
+    .list-group{
+        font-size: smaller;
+        width: 60%;
     }
-    
+    @keyframes un_efecto{
+        0%{width: 0%;}
+        25%{width: 15%;}
+        50%{width: 30%;}
+        75%{width: 45%;}
+        100%{width: 60%;}
+    }
 }
+
 
