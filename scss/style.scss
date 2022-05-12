@@ -1,0 +1,66 @@
+@import "variables/variables";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/section";
+@import "sass2/condicionales";
+
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "header header header" 
+    "list-group tienda tienda"
+    "list-group tienda tienda"
+    "footer footer footer";
+    grid-template-columns: 30% 35% 35%;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+.institutos{
+    grid-area: institutos;
+}
+.tienda{
+    grid-area: tienda;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+body{
+    background-color: $fondo-body;
+}
+.main-ubicacion{
+    text-align: center;
+    color: aliceblue;
+}
+@keyframes un_efecto{
+    0%{width: 0%;}
+    25%{width: 10%;}
+    50%{width: 20%;}
+    75%{width: 30%;}
+    100%{width: 40%;}
+}
+
+.list-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 40%;
+    margin: 4%;
+    font-size: medium;
+    animation-name: un_efecto;
+    animation-iteration-count: initial;
+    animation-timing-function:ease-in;
+    animation-duration: 2s;
+}
+.p-instituciones{
+    font-size: larger;
+}
+

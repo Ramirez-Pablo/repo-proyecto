@@ -1,0 +1,11 @@
+@import "../variables/variables";
+
+$redes: (
+    centro: $alinearalcentro,
+    ancho: 5%,
+);
+
+.redes{
+    width: map-get($redes , ancho );
+    align-content: map-get($redes , centro);
+}

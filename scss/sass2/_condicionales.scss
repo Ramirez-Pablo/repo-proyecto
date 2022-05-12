@@ -1,0 +1,19 @@
+$vista:mobile;
+
+body{
+    @if $vista == mobile{
+        @media screen and (max-width: 650px) {
+            .list-group{
+                font-size: smaller;
+                width: 60%;
+            }
+            @keyframes un_efecto{
+                0%{width: 0%;}
+                25%{width: 15%;}
+                50%{width: 30%;}
+                75%{width: 45%;}
+                100%{width: 60%;}
+            }
+        }
+    }
+}

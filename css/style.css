@@ -1,103 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+header {
+  background-color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.img-logo{
-    box-align:left;width: 120px;height: 90px;
-}
-header{
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-body{
-    background-color: green;
-}
-.nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    ;
-}
-.main-ubicacion{
-    text-align: center;
-    color: aliceblue;
-}
-@keyframes un_efecto{
-    0%{width: 0%;}
-    25%{width: 10%;}
-    50%{width: 20%;}
-    75%{width: 30%;}
-    100%{width: 40%;}
-}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
-.list-group{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: aliceblue;
-    width: 40%;
-    margin: 4%;
-    font-size: medium;
-    animation-name: un_efecto;
-    animation-iteration-count: initial;
-    animation-timing-function:ease-in;
-    animation-duration: 2s;
-}
-.p-instituciones{
-    font-size: larger;
-}
-.p-telefono{
-    text-align: center;
-}
-.logo-facebook{
-    width: 5%;
-    margin-left: 45%;
-}
-.logo-instagram{
-    width: 5%;
-}
+.img-logo {
+  box-align: left;
+  width: 120px;
+  height: 90px; }
 
-.grilla{
-    display: grid;
-    grid-template-areas:
-    "header header header" 
-    "list-group tienda tienda"
-    "list-group tienda tienda"
-    "footer footer footer";
-    grid-template-columns: 30% 35% 35%;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-}
-header{
-    grid-area: header;
-}
-footer{
-    grid-area: footer;
-}
-.institutos{
-    grid-area: institutos;
-}
-.tienda{
-    grid-area: tienda;
-    justify-items: center;
-    align-items: center;
-    display: grid;
-}
+.p-telefono {
+  text-align: center; }
+
+.logo-facebook {
+  width: 5%;
+  margin-left: 45%; }
+
+.logo-instagram {
+  width: 5%; }
+
+.tienda {
+  align-items: center; }
 
 @media screen and (max-width: 650px) {
-    .list-group{
-        font-size: smaller;
-        width: 60%;
-    }
-    @keyframes un_efecto{
-        0%{width: 0%;}
-        25%{width: 15%;}
-        50%{width: 30%;}
-        75%{width: 45%;}
-        100%{width: 60%;}
-    }
-}
+  body .list-group {
+    font-size: smaller;
+    width: 60%; }
+  @keyframes un_efecto {
+    0% {
+      width: 0%; }
+    25% {
+      width: 15%; }
+    50% {
+      width: 30%; }
+    75% {
+      width: 45%; }
+    100% {
+      width: 60%; } } }
 
+.grilla {
+  display: grid;
+  grid-template-areas: "header header header"  "list-group tienda tienda" "list-group tienda tienda" "footer footer footer";
+  grid-template-columns: 30% 35% 35%;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px; }
 
+header {
+  grid-area: header; }
+
+footer {
+  grid-area: footer; }
+
+.institutos {
+  grid-area: institutos; }
+
+.tienda {
+  grid-area: tienda;
+  justify-items: center;
+  align-items: center;
+  display: grid; }
+
+body {
+  background-color: #008000; }
+
+.main-ubicacion {
+  text-align: center;
+  color: aliceblue; }
+
+@keyframes un_efecto {
+  0% {
+    width: 0%; }
+  25% {
+    width: 10%; }
+  50% {
+    width: 20%; }
+  75% {
+    width: 30%; }
+  100% {
+    width: 40%; } }
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: aliceblue;
+  width: 40%;
+  margin: 4%;
+  font-size: medium;
+  animation-name: un_efecto;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 2s; }
+
+.p-instituciones {
+  font-size: larger; }

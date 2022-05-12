@@ -1,0 +1,16 @@
+@import "../variables/variables";
+
+header{
+    background-color: $fondo-header;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    ;
+}
+.img-logo{
+    box-align:left;width: 120px;height: 90px;
+}
